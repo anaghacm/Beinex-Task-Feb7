@@ -1,0 +1,22 @@
+@import '../../../assets/scss/variables';
+
+.dashboard-module{
+    background-color: $color-primary;
+    min-height: 520px;
+    height: 100%;
+    text-align: center;
+    .dash-text{
+        font-size: 50px;
+        color: $color-contrasting;
+        padding: 150px $spacer-0 50px;
+    }
+    .home-page{
+        color: $color-brown;
+        letter-spacing: 2px;
+        hr{
+            height: 1px;
+            width: $spacer-4;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+section{
+    padding-top: $spacer-1;
+    padding-bottom: $spacer-3;
+}

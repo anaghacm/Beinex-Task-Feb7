@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <i class="fa-brands fa-slack logo-icon"></i><a class="navbar-brand" routerLink="" routerLinkActive="active"> Quick Coders</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="courses" routerLinkActive="active">COURSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="gallery-link" (click)="viewGallery()">GALLERY</a>
+                </li>
+                <li class="nav-item" id="login-link">
+                    <a class="nav-link" routerLink="login" routerLinkActive="active">LOGIN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

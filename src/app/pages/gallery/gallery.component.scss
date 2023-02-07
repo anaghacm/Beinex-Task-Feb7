@@ -1,0 +1,29 @@
+@import '../../../assets/scss/variables';
+
+.gallery-module{
+    .gallery-head{
+        padding-top: 80px;
+        padding-bottom: 60px;
+        padding-right: $spacer-3;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .small-head{
+        font-size: $font-sm;
+        letter-spacing: 2px;
+        color: $color-brown;
+    }
+    .big-head{
+        font-size: $font-heading;
+        font-weight: 800;
+        line-height: 40px;
+        color: $color-primary;
+    }
+    .heading-divider{
+        height: 1px;
+        color: $color-brown;
+        width: 40px;
+        opacity: 1;
+        margin: auto;
+    }
+}

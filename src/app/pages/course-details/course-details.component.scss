@@ -1,0 +1,59 @@
+@import '../../../assets/scss/variables';
+
+.col {
+    margin-top: $spacer-2;
+    margin-bottom: $spacer-2;
+}
+
+.card {
+    background-color: $color-contrasting;
+    border: none;
+    color: $color-primary;
+    padding: 80px $spacer-0 $spacer-2;
+
+    &.new-card {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            width: 80px;
+            height: 80px;
+            background-image: url('../../../assets/images/new.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &:hover::after {
+            background-image: url('../../../assets/images/newbrown.png');
+        }
+    }
+
+    &:hover {
+        background-color: $color-white;
+        box-shadow: rgba(40, 54, 24, 0.35) 0px 5px 15px;
+    }
+
+    .card-title {
+        text-align: center;
+        padding-bottom: $spacer-1;
+        color: $color-green;
+        font-weight: 700;
+    }
+
+    .card-text {
+        font-size: $font-sm;
+        margin: auto;
+        padding: $spacer-1;
+        text-align: justify;
+    }
+
+    .text-head {
+        color: $color-green;
+        font-weight: 700;
+        font-size: $font-md;
+    }
+}

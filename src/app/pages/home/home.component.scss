@@ -1,0 +1,73 @@
+@import '../../../assets/scss/variables';
+
+.home-module{
+    min-height: 520px;
+    height: 100%;
+    .banner-content{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: $spacer-3;
+        letter-spacing: 1px;
+
+    }
+    .small-head{
+        font-size: $font-sm;
+        letter-spacing: 2px;
+        color: $color-brown;
+    }
+    .big-head{
+        font-size: $font-heading;
+        font-weight: 800;
+        line-height: 40px;
+        color: $color-primary;
+    }
+    .banner-text{
+        font-size: $font-sm;
+        padding-bottom: $spacer-3;
+        color: $color-primary;
+    }
+    .course-link{
+        background-color: $color-primary;
+        color: $color-contrasting;
+        text-decoration: none;
+        padding: $spacer-2 $spacer-3;
+        border-radius: 20px;
+        i{
+            color: $color-brown;
+            font-size: $font-xxl;
+        }
+        &:hover i {
+            animation: rotateicon 1s ease-in-out;
+        }
+    }
+}
+
+@keyframes rotateicon {
+    0% {
+        rotate: 30deg;
+    }
+
+    20% {
+        rotate: -30deg;
+    }
+
+    40% {
+        rotate: 15deg;
+    }
+
+    60% {
+        rotate: -15deg;
+    }
+
+    80% {
+        rotate: 5deg;
+    }
+
+    90% {
+        rotate: -5deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}

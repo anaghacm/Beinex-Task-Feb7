@@ -1,0 +1,13 @@
+@import '../../assets/scss/variables';
+
+.footer-module{
+    text-align: center;
+    font-size: $font-xsm;
+    background-color: $color-primary;
+    color: $color-contrasting;
+    
+    .footer-text{
+        padding: $spacer-1;
+        margin: 0;
+    }
+}

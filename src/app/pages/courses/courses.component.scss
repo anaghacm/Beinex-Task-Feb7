@@ -1,0 +1,56 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.courses-module {
+    .course-content {
+        text-align: center;
+        padding: $spacer-0 150px $spacer-4;
+        color: $color-primary;
+    }
+
+    .course-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .course-head {
+        font-size: $font-heading;
+        padding-bottom: $spacer-md;
+        font-weight: 800;
+        // line-height: 40px;
+    }
+    .small-head{
+        font-size: $font-sm;
+        letter-spacing: 2px;
+        color: $color-brown;
+    }
+   
+    .heading-divider{
+        height: 1px;
+        color: $color-brown;
+        width: 40px;
+        opacity: 1;
+        margin: auto;
+        padding-bottom: $spacer-3;
+    }
+    .course-text {
+        font-size: $font-sm;
+    }
+}
+
+@include tablet {
+    .courses-module {
+        .course-content {
+            padding: 50px $spacer-3;
+        }
+    }
+}
+
+@include mobile {
+    .courses-module {
+        .course-img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}

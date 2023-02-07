@@ -1,0 +1,62 @@
+@import '../../assets/scss/variables';
+
+.navbar {
+
+    background-color: $color-primary;
+
+    .navbar-brand {
+        color: $color-brown;
+        font-weight: 800;
+    }
+
+    .logo-icon {
+        color: $color-brown;
+        font-size: 36px;
+        padding-right: $spacer-md;
+    }
+
+    .navbar-toggler {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .nav-link {
+        color: $color-contrasting;
+        font-size: $font-sm;
+        font-weight: 600;
+        transition: all 0.3s;
+        cursor: pointer;
+        padding-left: $spacer-2;
+
+        &:hover {
+            color: $color-brown;
+        }
+    }
+
+    .active {
+        color: $color-brown;
+    }
+}
+
+@keyframes logocolour {
+    0% {
+        color: $color-contrasting;
+    }
+
+    30% {
+        color: $color-lightbrown;
+    }
+
+    60% {
+        color: $color-green;
+    }
+
+    90% {
+        color: $color-brown;
+    }
+
+    100% {
+        color: $color-contrasting;
+    }
+}
